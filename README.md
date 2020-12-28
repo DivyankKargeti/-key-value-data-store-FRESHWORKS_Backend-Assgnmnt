@@ -20,6 +20,11 @@ unexpected ways or breaches any limits
 8. The file size never exceeds 1GB
 9. The file is accessed by multi-threading
 
+# How to Run the Code
 
-Go through the accessing.py file and examples.pdf file that are attached here with in order to understand clearly how 
-the code works and how to perform operations in this. 
+### Steps:-
+
+1. Open the CMD and move to the project directory
+2. run command prompt
+3. In the CMD, Run the Python Idle terminal by using the following command:
+		

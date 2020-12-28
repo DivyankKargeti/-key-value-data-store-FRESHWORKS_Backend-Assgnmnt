@@ -1,5 +1,4 @@
 import threading 
-#this is for python 3.0 and above. use import thread for python2.0 versions
 from threading import*
 import time
 
