@@ -25,6 +25,41 @@ unexpected ways or breaches any limits
 ### Steps:-
 
 1. Open the CMD and move to the project directory
-2. run command prompt
-3. In the CMD, Run the Python Idle terminal by using the following command:
+2. Open Command Prompt
+3. In the CMD, Run the Python Idle terminal by using the following command: ``` >>>python ```
+4. Now a Python repl will open up in the Command Prompt
+5. Use the following Code for understanding the working:
+```python
+
+	#importing the main file
+	import code as x 
+	
+	#to create a key with key_name,value given and with NO TTL(Time to Live) Argument
+	x.create("Divyank",17)
+	#to create a key with key_name,value given and with a TTL(Time to Live) Argument of 3600 secs
+	x.create("Siddartha",45,3600) 
+	
+	#Reading data
+	x.read("Divyank")
+	x.read("Siddartha")
+	
+	#Deleting data
+	x.delete("Divyank")
+	x.delete("Siddartha")
+	
+	
+	###Extras
+	#we can access these using multiple threads like
+        t1=Thread(target=(create or read or delete),args=(key_name,value,timeout)) #as per the operation
+        t1.start()
+        t1.sleep()
+        t2=Thread(target=(create or read or delete),args=(key_name,value,timeout)) #as per the operation
+        t2.start()
+        t2.sleep()
+
+	
+```
+
+## Screen Shots of the Working Code:
+
 		
